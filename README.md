@@ -40,6 +40,10 @@ The extension pins the local SDK contract package; the player project pins compi
 
 Success on one reload does not establish arbitrary DLL replacement, resource/UI reload, multiplayer compatibility, or player-package readiness.
 
+## Review wiring
+
+Run `npm ci`, then `npm run review:info` or `npm run review:gate`. The pinned harness runs through `scripts/review.mjs`, which fixes its review base to the actual origin/main commit in temporary Git metadata without changing branch tracking. Attest only completed independent results using `npm run review:attest -- <results-file>`. Wrapper configuration failures use `REVIEW_SETUP_FAILURE` (INTERNAL/500). Hosted CI is configured for secrets; a local hook check does not establish a hosted run or branch protection.
+
 ## Related projects
 
 [Workspace and research](https://github.com/Xaaalera/sts2-workshop) · [SDK](https://github.com/Xaaalera/sts2-mod-devkit) · [BaseLib](https://github.com/Alchyr/BaseLib-StS2) · [RitsuLib](https://github.com/BAKAOLC/STS2-RitsuLib) · [Working standards](https://github.com/Xaaalera/claude-skills).
