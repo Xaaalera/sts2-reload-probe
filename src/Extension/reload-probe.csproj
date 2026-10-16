@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Compile Include="../Behavior.cs" Link="Behavior.cs" />
+    <PackageReference Include="Sts2.ModDevkit.Contracts" Version="0.1.0-alpha.1" />
+  </ItemGroup>
+</Project>

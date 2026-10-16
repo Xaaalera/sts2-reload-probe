@@ -1,0 +1,12 @@
+{
+  "id": "ReloadProbe",
+  "name": "Reload Probe",
+  "author": "Xaaalera",
+  "description": "Standalone acceptance probe for the StS2 development workflow.",
+  "version": "0.1.0-alpha.1",
+  "has_pck": false,
+  "has_dll": true,
+  "affects_gameplay": false,
+  "min_game_version": "0.107.1",
+  "dependencies": [{ "id": "BaseLib" }, { "id": "STS2-RitsuLib" }]
+}
