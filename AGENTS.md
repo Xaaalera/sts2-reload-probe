@@ -12,4 +12,4 @@
 - Use API/hooks/log/process evidence where possible; screenshots require an explicit owner request for the image or comparison.
 - Retain exact source, dependency, game, artifact, and session identities. Prefer the fastest sufficient check and do not repeat unchanged accepted experiments.
 - Do not modify the owner's existing mods, profile, or saves. Keep local artifacts under ignored `.local/`; never commit game content, secrets, or personal logs.
-- This bootstrap contains plugin declarations but no verified review harness. Install and validate targeted review/secret-scan gates before substantive implementation.
+- The pinned review harness and pre-push hook are installed; unattested pushes are verified to fail. Use the configured independent roles and never bypass the gate. Do not claim hosted CI or branch protection without evidence.
