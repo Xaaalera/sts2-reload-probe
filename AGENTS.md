@@ -2,7 +2,7 @@
 
 - Write repository content in English. Read README before changing the acceptance mod.
 - Native game facilities are the first choice: reuse actual game APIs/components/scenes/assets, palette, fonts, animations and interactions before library adapters or custom code. Record a demonstrated gap before choosing a custom implementation.
-- Follow the shared [workspace instructions](https://github.com/Xaaalera/sts2-workshop/blob/main/AGENTS.md) and current [handoff](https://github.com/Xaaalera/sts2-workshop/blob/main/docs/handoff.md), including standalone development.
+- Follow the shared [workspace instructions](https://github.com/Xaaalera/sts2-workshop/blob/feat/intent-lens/AGENTS.md) and current [handoff](https://github.com/Xaaalera/sts2-workshop/blob/feat/intent-lens/docs/handoff.md), including standalone development.
 - Search retained findings and primary internet sources before implementing a mechanism. Reuse established game/library capabilities; preserve URLs, revisions, hypotheses, failed attempts, and verification limits.
 - Apply installed relevant [marketplace guides](https://github.com/Xaaalera/claude-skills). Do not claim a guide, review gate, or test ran unless it actually did.
 - Keep this mod's behavior independent of SDK tooling. Only its integration adapter knows the runtime/extension contract.
