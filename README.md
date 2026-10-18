@@ -24,7 +24,7 @@ dotnet build src/Player/ReloadProbe.csproj
 
 The SDK's [command workflow](https://github.com/Xaaalera/sts2-mod-devkit/blob/feat/intent-lens/README.md#use-the-sdk) builds both variants and stages the extension. Invoke its `probe` command to read value, generation, and initialization/invocation thread IDs. Edit `src/Behavior.cs`, rebuild the extension, reload it, and invoke again.
 
-For a player installation, copy only `src/Player/bin/Debug/net9.0/ReloadProbe.dll` and `ReloadProbe.json` into `mods/ReloadProbe/`. Install complete BaseLib 3.4.7 and RitsuLib 0.6.7/API-0.107.1 runtime packages. Normal native mod initialization logs `reload-probe.player value=<value>`. SDK tools, contracts, source checkout, and PowerShell are not player dependencies. The SDK provides `package-player` to assemble these two files.
+For a player installation, copy `src/Player/bin/Debug/net9.0/ReloadProbe.dll`, `ReloadProbe.json` and `LICENSE` into `mods/ReloadProbe/`. Install complete BaseLib 3.4.7 and RitsuLib 0.6.7/API-0.107.1 runtime packages. Normal native mod initialization logs `reload-probe.player value=<value>`. SDK tools, contracts, source checkout, and PowerShell are not player dependencies. The SDK provides `package-player` to assemble these three files.
 
 The extension pins the local SDK contract package; the player project pins compile-time BaseLib/RitsuLib packages. Both compile the same behavior file. Game references use `STS2_GAME_DIR` with `Private=false`, and RitsuLib's automatic deployment is disabled.
 
