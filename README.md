@@ -1,6 +1,6 @@
 # StS2 Reload Probe
 
-Private acceptance mod for the StS2 SDK. Its first job is to demonstrate behavior changing from generation A to B in the same owned game process and session, with verified cleanup of the previous generation.
+Acceptance mod for the StS2 SDK. Its first job is to demonstrate behavior changing from generation A to B in the same owned game process and session, with verified cleanup of the previous generation.
 
 ## Status
 
@@ -49,3 +49,7 @@ Run `npm ci`, then `npm run review:info` or `npm run review:gate`. The pinned ha
 [Workspace and research](https://github.com/Xaaalera/sts2-workshop) · [SDK](https://github.com/Xaaalera/sts2-mod-devkit) · [BaseLib](https://github.com/Alchyr/BaseLib-StS2) · [RitsuLib](https://github.com/BAKAOLC/STS2-RitsuLib) · [Working standards](https://github.com/Xaaalera/claude-skills).
 
 [Xaaalera](https://github.com/Xaaalera) · [Email](mailto:dampirsimpl@gmail.com) · [Telegram](https://t.me/Victima). Unofficial fan project, not affiliated with Mega Crit.
+
+## License
+
+Original project code and documentation are licensed under the [MIT License](LICENSE), copyright 2026 [Xaaalera](https://github.com/Xaaalera). Commercial use and redistribution are allowed; retain the copyright and license notice in distributed copies or substantial portions. Third-party code, dependencies and game assets retain their own licenses and ownership.
