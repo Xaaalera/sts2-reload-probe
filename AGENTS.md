@@ -1,7 +1,8 @@
 # Reload probe working instructions
 
 - Write repository content in English. Read README before changing the acceptance mod.
-- Follow the shared [workspace instructions](https://github.com/Xaaalera/sts2-workshop/blob/main/AGENTS.md) and current [handoff](https://github.com/Xaaalera/sts2-workshop/blob/main/docs/handoff.md), including standalone development.
+- Native game facilities are the first choice: reuse actual game APIs/components/scenes/assets, palette, fonts, animations and interactions before library adapters or custom code. Record a demonstrated gap before choosing a custom implementation.
+- Follow the shared [workspace instructions](https://github.com/Xaaalera/sts2-workshop/blob/feat/intent-lens/AGENTS.md) and current [handoff](https://github.com/Xaaalera/sts2-workshop/blob/feat/intent-lens/docs/handoff.md), including standalone development.
 - Search retained findings and primary internet sources before implementing a mechanism. Reuse established game/library capabilities; preserve URLs, revisions, hypotheses, failed attempts, and verification limits.
 - Apply installed relevant [marketplace guides](https://github.com/Xaaalera/claude-skills). Do not claim a guide, review gate, or test ran unless it actually did.
 - Keep this mod's behavior independent of SDK tooling. Only its integration adapter knows the runtime/extension contract.
@@ -12,4 +13,4 @@
 - Use API/hooks/log/process evidence where possible; screenshots require an explicit owner request for the image or comparison.
 - Retain exact source, dependency, game, artifact, and session identities. Prefer the fastest sufficient check and do not repeat unchanged accepted experiments.
 - Do not modify the owner's existing mods, profile, or saves. Keep local artifacts under ignored `.local/`; never commit game content, secrets, or personal logs.
-- This bootstrap contains plugin declarations but no verified review harness. Install and validate targeted review/secret-scan gates before substantive implementation.
+- The pinned review harness and pre-push hook are installed; unattested pushes are verified to fail. Use the configured independent roles and never bypass the gate. Do not claim hosted CI or branch protection without evidence.
