@@ -1,6 +1,6 @@
 # StS2 Reload Probe
 
-Private acceptance mod for the StS2 SDK. Its first job is to demonstrate behavior changing from generation A to B in the same owned game process and session, with verified cleanup of the previous generation.
+Acceptance mod for the StS2 SDK. Its first job is to demonstrate behavior changing from generation A to B in the same owned game process and session, with verified cleanup of the previous generation.
 
 ## Status
 
@@ -24,7 +24,7 @@ dotnet build src/Player/ReloadProbe.csproj
 
 The SDK's [command workflow](https://github.com/Xaaalera/sts2-mod-devkit/blob/feat/intent-lens/README.md#use-the-sdk) builds both variants and stages the extension. Invoke its `probe` command to read value, generation, and initialization/invocation thread IDs. Edit `src/Behavior.cs`, rebuild the extension, reload it, and invoke again.
 
-For a player installation, copy only `src/Player/bin/Debug/net9.0/ReloadProbe.dll` and `ReloadProbe.json` into `mods/ReloadProbe/`. Install complete BaseLib 3.4.7 and RitsuLib 0.6.7/API-0.107.1 runtime packages. Normal native mod initialization logs `reload-probe.player value=<value>`. SDK tools, contracts, source checkout, and PowerShell are not player dependencies. The SDK provides `package-player` to assemble these two files.
+For a player installation, copy `src/Player/bin/Debug/net9.0/ReloadProbe.dll`, `ReloadProbe.json` and `LICENSE` into `mods/ReloadProbe/`. Install complete BaseLib 3.4.7 and RitsuLib 0.6.7/API-0.107.1 runtime packages. Normal native mod initialization logs `reload-probe.player value=<value>`. SDK tools, contracts, source checkout, and PowerShell are not player dependencies. The SDK provides `package-player` to assemble these three files.
 
 The extension pins the local SDK contract package; the player project pins compile-time BaseLib/RitsuLib packages. Both compile the same behavior file. Game references use `STS2_GAME_DIR` with `Private=false`, and RitsuLib's automatic deployment is disabled.
 
@@ -49,3 +49,7 @@ Run `npm ci`, then `npm run review:info` or `npm run review:gate`. The pinned ha
 [Workspace and research](https://github.com/Xaaalera/sts2-workshop) · [SDK](https://github.com/Xaaalera/sts2-mod-devkit) · [BaseLib](https://github.com/Alchyr/BaseLib-StS2) · [RitsuLib](https://github.com/BAKAOLC/STS2-RitsuLib) · [Working standards](https://github.com/Xaaalera/claude-skills).
 
 [Xaaalera](https://github.com/Xaaalera) · [Email](mailto:dampirsimpl@gmail.com) · [Telegram](https://t.me/Victima). Unofficial fan project, not affiliated with Mega Crit.
+
+## License
+
+Original project code and documentation are licensed under the [MIT License](LICENSE), copyright 2026 [Xaaalera](https://github.com/Xaaalera). Commercial use and redistribution are allowed; retain the copyright and license notice in distributed copies or substantial portions. Third-party code, dependencies and game assets retain their own licenses and ownership.
