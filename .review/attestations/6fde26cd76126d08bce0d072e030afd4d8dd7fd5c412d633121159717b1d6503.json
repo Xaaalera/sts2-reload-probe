@@ -1,0 +1,38 @@
+{
+  "diffHash": "6fde26cd76126d08bce0d072e030afd4d8dd7fd5c412d633121159717b1d6503",
+  "commitSha": "7a259d23c0b69cbfc40ccd73a55a3df136639c46",
+  "perAgent": {
+    "craft": {
+      "verdict": "PASS",
+      "score": 8,
+      "reviewedCommit": "7a259d23c0b69cbfc40ccd73a55a3df136639c46",
+      "reviewer": "review_craft"
+    },
+    "docs": {
+      "verdict": "PASS",
+      "score": 9,
+      "reviewedCommit": "7a259d23c0b69cbfc40ccd73a55a3df136639c46",
+      "reviewer": "review_docs"
+    },
+    "security": {
+      "verdict": "PASS",
+      "score": 9,
+      "reviewedCommit": "7a259d23c0b69cbfc40ccd73a55a3df136639c46",
+      "reviewer": "review_security_final"
+    },
+    "tests": {
+      "verdict": "PASS",
+      "score": 9,
+      "reviewedCommit": "7a259d23c0b69cbfc40ccd73a55a3df136639c46",
+      "reviewer": "review_public_tests"
+    },
+    "architecture": {
+      "verdict": "PASS",
+      "score": 9,
+      "reviewedCommit": "7a259d23c0b69cbfc40ccd73a55a3df136639c46",
+      "reviewer": "review_public_architecture"
+    }
+  },
+  "overall": "PASS",
+  "timestamp": "2026-10-18T15:17:59.173Z"
+}
